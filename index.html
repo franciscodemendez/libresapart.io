@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apart Libres</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="#">Apart Libres</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <a href="#">Home</a>
+          <a href="#">Instalacioness</a>
+          <a href="#">Ubicación</a>
+          <a href="#">Galeria</a>
+          <a href="#">Contacto</a>
+        </div>
+      </div>
+    </header>
+    <section class="home">
+      <video
+        class="video-slide active"
+        src="/2323_2.mp4" autoplay muted loop
+      ></video>
+      <div class="content active">
+        <h1>Paso de los <br /><span>Libres</span></h1>
+        <p>
+          Hola !!
+          Somos una empresa absolutamente entregada a la excelencia y a la necesidad de nuestros clientes en su descanso.
+          <br>
+          En nuestro alojamiento encontrara confort y calidad para su estadia.
+        </p>
+        <a href="#">Consultar fechas</a>
+    </section>
+    <script type="text/javascript">
+      const menuBtn = document.querySelector(".menu-btn");
+      const navigation = document.querySelector(".navigation");
+
+      menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
